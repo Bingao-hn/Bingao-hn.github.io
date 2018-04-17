@@ -233,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/16/123/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/16/python图像处理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Bingao">
@@ -252,7 +252,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/16/123/" itemprop="url">123</a></h1>
+                <a class="post-title-link" href="/2018/04/16/python图像处理/" itemprop="url">python图像处理--切割（crop函数的运用）</a></h1>
         
 
         <div class="post-meta">
@@ -304,7 +304,62 @@
       
         
           
-            
+            <h1 id="python图像处理–切割（crop函数的运用）"><a href="#python图像处理–切割（crop函数的运用）" class="headerlink" title="python图像处理–切割（crop函数的运用）"></a>python图像处理–切割（crop函数的运用）</h1><p>最近在做毕业设计，涉及到图像处理的知识，记录一下</p>
+<p><em>运行环境python3.6</em></p>
+<p>先看效果图: <img src="../img/2018041708580630.png" alt="Alt text"></p>
+<p>可见，这里实现的是一个定点切割，怎么实现的呢？来看看代码：</p>
+<blockquote>
+<p>from PIL import Image</p>
+<p>im = Image.open(‘F:/test.jpg’)</p>
+<p># 图片的宽度和高度</p>
+<p>img_size = im.size</p>
+<p>print(“图片宽度和高度分别是{}”.format(img_size))</p>
+<p>left = 80</p>
+<p>upper = 210</p>
+<p>right = 505</p>
+<p>lower = 640</p>
+<p>region = im.crop((left,upper,right,lower))</p>
+<p>region.save(“F:/crop_test.jpg”)</p>
+</blockquote>
+<p>这段代码，实现的是从一张大图上切指定区域的某个部分，主要就是利用crop()函数,crop()的参数，而在看了下面这段定义之后，我们应该关注一下crop()函数的这个4-tuple参数了,见crop的定义</p>
+<blockquote>
+<p>def crop(self, box=None):</p>
+<p>​        “””</p>
+<p>​        Returns a rectangular region from this image. The box is a</p>
+<p>​        4-tuple defining the left, upper, right, and lower pixel</p>
+<p>​        coordinate.</p>
+<p>​        Note: Prior to Pillow 3.4.0, this was a lazy operation.</p>
+<p>​        :param box: The crop rectangle, as a (left, upper, right, lower)-tuple.</p>
+<p>​        :rtype: :py:class:<code>~PIL.Image.Image</code></p>
+<p>​        :returns: An :py:class:<code>~PIL.Image.Image</code> object.</p>
+<p>​        “””</p>
+</blockquote>
+<p>现在具体讲怎么设置(left,upper,right,lower)这个参数，其实简单点来说就是“左上右下”的顺序，我之前那个是怎么实现切割的呢？我是怎么获取这些边界的呢，其实很笨的方法，我使用了ps的坐标，拖动的时候就可以看到对应像素，如下图：</p>
+<p><img src="https://img-blog.csdn.net/20180417090642726?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hBTk5JTkc1NjMxMjg3NjY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<p>好了，最简单的切割完成了，在这里在贴一个自动切割多块的代码，切割个数是yy * xx个，可自行修改，知道了原理大家也可以自由发挥哦~效果图和代码如下：</p>
+<p><img src="https://img-blog.csdn.net/2018041709134155?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hBTk5JTkc1NjMxMjg3NjY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
+<blockquote>
+<p>from PIL import Image</p>
+<p>im = Image.open(“F:/test.jpg”)</p>
+<p># 图片的宽度和高度</p>
+<p>img_size = im.size</p>
+<p>print(“图片宽度和高度分别是{}”.format(img_size))</p>
+<p>xx = 3</p>
+<p>yy = 2</p>
+<p>x = img_size[0] // xx</p>
+<p>y = img_size[1] // yy</p>
+<p>for j in range(yy):</p>
+<p>​    for i in range(xx):</p>
+<p>​        left = i*x</p>
+<p>​        up = y*j</p>
+<p>​        right = left + x</p>
+<p>​        low = up + y</p>
+<p>​        region = im.crop((left,up,right,low))</p>
+<p>​        print((left,up,right,low))</p>
+<p>​        temp = str(i)+str(j)</p>
+<p>​        region.save(“f:/test/“+temp+”.png”)</p>
+</blockquote>
+
           
         
       
@@ -521,6 +576,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
