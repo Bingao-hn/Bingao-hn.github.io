@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="使git部署 npm install hexo-deployer-git –save 基本的流程到这里快要结束了 最后执行:(hexo clean –&amp;gt;hexo generate –&amp;gt;hexo deploy) 参考博客">
+<meta name="description" content="使git部署 npm install hexo-deployer-git –save 基本的流程到这里快要结束了 最后执行:(hexo clean –&amp;gt;hexo generate –&amp;gt;hexo deploy) 确认在本地上显示无误之后，就可以将 md 转为 静态网页文件，然后发布到 GitHubPages 上去了 123456hexo clean #清除缓存 网页正常情况下可以忽略此条">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo推送文章到github">
 <meta property="og:url" content="http://yoursite.com/2018/04/19/hexo推送文章到github/index.html">
 <meta property="og:site_name" content="Bingao">
-<meta property="og:description" content="使git部署 npm install hexo-deployer-git –save 基本的流程到这里快要结束了 最后执行:(hexo clean –&amp;gt;hexo generate –&amp;gt;hexo deploy) 参考博客">
+<meta property="og:description" content="使git部署 npm install hexo-deployer-git –save 基本的流程到这里快要结束了 最后执行:(hexo clean –&amp;gt;hexo generate –&amp;gt;hexo deploy) 确认在本地上显示无误之后，就可以将 md 转为 静态网页文件，然后发布到 GitHubPages 上去了 123456hexo clean #清除缓存 网页正常情况下可以忽略此条">
 <meta property="og:locale" content="zh_Hans">
-<meta property="og:updated_time" content="2018-04-19T12:02:05.010Z">
+<meta property="og:updated_time" content="2018-04-19T12:51:20.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo推送文章到github">
-<meta name="twitter:description" content="使git部署 npm install hexo-deployer-git –save 基本的流程到这里快要结束了 最后执行:(hexo clean –&amp;gt;hexo generate –&amp;gt;hexo deploy) 参考博客">
+<meta name="twitter:description" content="使git部署 npm install hexo-deployer-git –save 基本的流程到这里快要结束了 最后执行:(hexo clean –&amp;gt;hexo generate –&amp;gt;hexo deploy) 确认在本地上显示无误之后，就可以将 md 转为 静态网页文件，然后发布到 GitHubPages 上去了 123456hexo clean #清除缓存 网页正常情况下可以忽略此条">
 
 
 
@@ -238,7 +238,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Bingao">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -304,7 +304,10 @@
 <p>npm install hexo-deployer-git –save</p>
 <p>基本的流程到这里快要结束了</p>
 <p>最后执行:<strong>(</strong>hexo clean –&gt;hexo generate –&gt;hexo deploy)</p>
+<p>确认在本地上显示无误之后，就可以将 md 转为 静态网页文件，然后发布到 GitHubPages 上去了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清除缓存 网页正常情况下可以忽略此条命令</span><br><span class="line">hexo g #生成静态网页</span><br><span class="line">hexo d #开始部署</span><br><span class="line"></span><br><span class="line">也可以一次性执行</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <p><a href="https://blog.csdn.net/ainuser/article/details/77609180" target="_blank" rel="noopener">参考博客</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/25959864" target="_blank" rel="noopener">超详细配置</a></p>
 
       
     </div>
@@ -314,6 +317,35 @@
 
     
 
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/uploads/images/wechat-reward-image.jpg" alt="Bingao WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/uploads/images/alipay-reward-image.jpg" alt="Bingao Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
     
 
     
@@ -400,6 +432,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/images/avatar.jpg"
+                alt="Bingao" />
+            
               <p class="site-author-name" itemprop="name">Bingao</p>
               <p class="site-description motion-element" itemprop="description">记录点滴</p>
           </div>
@@ -434,6 +470,34 @@
 
           
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/luosv" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-globe"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.jianshu.com/u/1b1a17e2c18b" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-globe"></i>简书</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/5394586088/profile?topnav=1&wvr=6" target="_blank" title="Weibo">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Weibo</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://luosv.lofter.com/" target="_blank" title="LOFTER">
+                      
+                        <i class="fa fa-fw fa-globe"></i>LOFTER</a>
+                  </span>
+                
+            </div>
           
 
           
