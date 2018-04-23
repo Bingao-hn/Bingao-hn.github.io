@@ -12,7 +12,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
 
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -201,6 +211,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -296,6 +316,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  78字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -314,11 +365,16 @@
       
         
           
-            <p>#有空的时候，要好好总结学习下正则表达式<br>1.匹配大括号内的所有内容{[\S\s]+}</p>
-<p> QRegExp rx(“<em>result([\S\s]+)result</em>“);<br>QString str = “<em>resultOffsets: {12} d1\n ksjdkl \t jjks \n4d 99 231 7result</em>“;<br>QStringList list;<br>int pos = 0;</p>
-<p>while ((pos = rx.indexIn(str, pos)) != -1) {<br>    list &lt;&lt; rx.cap(1);<br>    pos += rx.matchedLength();<br>}<br>qDebug()&lt;&lt;list;<br>// list: [“12”, “14”, “99”, “231”, “7”]</p>
-
-          
+          #有空的时候，要好好总结学习下正则表达式1.匹配大括号内的所有内容{[\S\s]+}
+ QRegExp rx(“result([\S\s]+)result“);QString str = “resultOffsets: {12} d1\n ksjdkl \t jjks \n4d 99 231 7re
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/22/正则表达式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -420,6 +476,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  43字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -438,12 +525,19 @@
       
         
           
-            <p>###1.python一些库都能在<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy" target="_blank" rel="noopener">这里</a>下载哦</p>
-<blockquote>
-<p>下载完后，打开cmd, 输入pip install ,然后把相应文件往窗口里一拖，回车，打完收工</p>
-</blockquote>
+          ###1.python一些库都能在这里下载哦
+
+下载完后，打开cmd, 输入pip install ,然后把相应文件往窗口里一拖，回车，打完收工
+
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/20/一些资源/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -545,6 +639,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  131字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -563,16 +688,19 @@
       
         
           
-            <p>使git部署</p>
-<p>npm install hexo-deployer-git –save</p>
-<p>基本的流程到这里快要结束了</p>
-<p>最后执行:<strong>(</strong>hexo clean –&gt;hexo generate –&gt;hexo deploy)</p>
-<p>确认在本地上显示无误之后，就可以将 md 转为 静态网页文件，然后发布到 GitHubPages 上去了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo clean #清除缓存 网页正常情况下可以忽略此条命令</span><br><span class="line">hexo g #生成静态网页</span><br><span class="line">hexo d #开始部署</span><br><span class="line"></span><br><span class="line">也可以一次性执行</span><br><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-<p><a href="https://blog.csdn.net/ainuser/article/details/77609180" target="_blank" rel="noopener">参考博客</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/25959864" target="_blank" rel="noopener">超详细配置</a></p>
-
-          
+          使git部署
+npm install hexo-deployer-git –save
+基本的流程到这里快要结束了
+最后执行:(hexo clean –&gt;hexo generate –&gt;hexo deploy)
+确认在本地上显示无误之后，就可以将 md 转为 静态网页文件，然后发布到 Gi
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/19/hexo推送文章到github/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -663,6 +791,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -673,6 +823,37 @@
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  823字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  3分钟
+                </span>
+              
+            </div>
           
 
           
@@ -692,84 +873,19 @@
       
         
           
-            <h1 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h1><blockquote>
-<p>1.包名所有字母一律小写，如cn.test.test</p>
-<p>2.类名和接口名每个单词 的首字母都要大写，如ArrayList，Iterrator。</p>
-<p>3.常量名所有字母都大写，单词之间用下划线连接，例如DAY_OF_MONTH。</p>
-<p>4.在程序中，尽量使用有意义的英文单词来定义标识符，使得程序便于阅读。如使用userName表示用户名，passWord表示密码等。</p>
-</blockquote>
-<h1 id="TIPS"><a href="#TIPS" class="headerlink" title="TIPS"></a>TIPS</h1><blockquote>
-<p>1.对于浮点数常量，分为float和double两种类型，单精度在数字后面加上f或F，双精度在数字后面加上d或D，<font color="red">默认不加后缀的时候为双精度</font></p>
-<p>2.java采用的是Unicode字符集，Unicode字符集以\u开头，空白字符在Unicode码表中对应的值为’\u0000’</p>
-<p>3.整形类型变量</p>
-<table>
-<thead>
-<tr>
-<th>类型名</th>
-<th style="text-align:center">占用空间</th>
-<th style="text-align:center">取值范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>byte</td>
-<td style="text-align:center">8位（1个字节）</td>
-<td style="text-align:center">-2^7 ~ 2^7-1</td>
-</tr>
-<tr>
-<td>short</td>
-<td style="text-align:center">16位（2个字节）</td>
-<td style="text-align:center">-2^15 ~ 2^15-1</td>
-</tr>
-<tr>
-<td>int</td>
-<td style="text-align:center">32位（4个字节）</td>
-<td style="text-align:center">-2^31 ~ 2^31-1</td>
-</tr>
-<tr>
-<td>long</td>
-<td style="text-align:center">64位（8个字节）</td>
-<td style="text-align:center">2^63 ~ 2^63-1</td>
-</tr>
-</tbody>
-</table>
-<p>4.表达式类型自动提升</p>
-<blockquote>
-<p>byte b1 = 3;</p>
-<p>byte b2 = 4;</p>
-<p>byte b3 = b1 + b2;    //此句会报错，原因是在b1+b2进行运行期间，变量b1 b2都被自动提升为int型，结果也自然成了int型，所以会报错，需要强制类型转换</p>
-<p>//byte b3 =(byte)( b1 + b2 ); //right</p>
-</blockquote>
-<p>5.与c++的一个区别：</p>
-<blockquote>
-<p>java中，不可以在{}中重复定义变量，而c++中可以,下面这段代码java会报错，而c++则不会</p>
-<p>int x =5;</p>
-<p>{</p>
-<p>​    int x =6;</p>
-<p>​    System.out.printf(“%d\n”,x);</p>
-<p>}</p>
-<p>System.out.printf(“%d\n”,x);</p>
-</blockquote>
-<p>6.+= -= *= /=等运算符会自动强制类型转换</p>
-<blockquote>
-<p>short s =3;</p>
-<p>int i =5;</p>
-<p>//s = i;    //错误: 不兼容的类型: 从int转换到short可能会有损失</p>
-<p>s += i;     //在使用+= *=等运算符时，会自动强制类型转换</p>
-</blockquote>
-<p>7.异常处理</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">int</span> result = divide(<span class="number">4</span>,<span class="number">0</span>);</span><br><span class="line">            System.out.println(result);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"Exception is :"</span>+e.getMessage());</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;<span class="keyword">finally</span>&#123; <span class="comment">//无论程序是否发生异常，这里的语句都要执行</span></span><br><span class="line">            <span class="comment">//有一种情况finally不会执行，那就是try...catch...中执行了System.exit(0),表示退出当前Java虚拟机，虚拟机都退出了，后面的代码自然也不会执行了</span></span><br><span class="line">            System.out.print(<span class="string">"after return ,run to here!"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.print(<span class="string">"run to here!"</span>);<span class="comment">//发生异常后，这里不会打印</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>8.垃圾回收，除了等待Java虚拟机进行自动垃圾回收，也可以通过调用System.gc()方法来通知Java虚拟机立即进行垃圾回收。当一个对象在内存中被释放时，它的finalize()方法会被自动调用，因此可以在类中通过定义finalize()方法来观察对象何时被释放。</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</span><br><span class="line">    <span class="comment">//下面定义的finalize方法会在垃圾回收前被调用</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">finalize</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"对象将被作为垃圾回收..."</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GarbageCollection</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Person p1 = <span class="keyword">new</span> Person();</span><br><span class="line">        Person p2 = <span class="keyword">new</span> Person();</span><br><span class="line">        <span class="comment">//指针置null,让对象成为垃圾</span></span><br><span class="line">        p1 = <span class="keyword">null</span>;</span><br><span class="line">        p2 =<span class="keyword">null</span>;</span><br><span class="line">        System.gc();    <span class="comment">//调用方法进行垃圾回收</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">1000000</span>;i++)&#123;&#125;<span class="comment">//延长程序运行时间，以便更好的看到垃圾回收过程，如果不加可能只看到一次或看不到输出  </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>9.</p>
-</blockquote>
-<p>​      </p>
-
-          
+          命名规范
+1.包名所有字母一律小写，如cn.test.test
+2.类名和接口名每个单词 的首字母都要大写，如ArrayList，Iterrator。
+3.常量名所有字母都大写，单词之间用下划线连接，例如DAY_OF_MONTH。
+4.在程序中，尽量使用有意义的英文单词来定义标识符，使得程序便于阅读
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/19/javaLearn/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -871,6 +987,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  495字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -889,64 +1036,24 @@
       
         
           
-            <p>最近在做毕业设计，涉及到图像处理的知识，记录一下</p>
-<p><em>运行环境python3.6</em></p>
-<p>先看效果图: </p>
-<p><img src="https://img-blog.csdn.net/2018041708580630?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hBTk5JTkc1NjMxMjg3NjY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>可见，这里实现的是一个定点切割，怎么实现的呢？来看看代码：</p>
-<blockquote>
-<p>from PIL import Image</p>
-<p>im = Image.open(‘F:/test.jpg’)</p>
-<p># 图片的宽度和高度</p>
-<p>img_size = im.size</p>
-<p>print(“图片宽度和高度分别是{}”.format(img_size))</p>
-<p>left = 80</p>
-<p>upper = 210</p>
-<p>right = 505</p>
-<p>lower = 640</p>
-<p>region = im.crop((left,upper,right,lower))</p>
-<p>region.save(“F:/crop_test.jpg”)</p>
-</blockquote>
-<p>这段代码，实现的是从一张大图上切指定区域的某个部分，主要就是利用crop()函数,crop()的参数，而在看了下面这段定义之后，我们应该关注一下crop()函数的这个4-tuple参数了,见crop的定义</p>
-<blockquote>
-<p>def crop(self, box=None):</p>
-<p>​        “””</p>
-<p>​        Returns a rectangular region from this image. The box is a</p>
-<p>​        4-tuple defining the left, upper, right, and lower pixel</p>
-<p>​        coordinate.</p>
-<p>​        Note: Prior to Pillow 3.4.0, this was a lazy operation.</p>
-<p>​        :param box: The crop rectangle, as a (left, upper, right, lower)-tuple.</p>
-<p>​        :rtype: :py:class:<code>~PIL.Image.Image</code></p>
-<p>​        :returns: An :py:class:<code>~PIL.Image.Image</code> object.</p>
-<p>​        “””</p>
-</blockquote>
-<p>现在具体讲怎么设置(left,upper,right,lower)这个参数，其实简单点来说就是“左上右下”的顺序，我之前那个是怎么实现切割的呢？我是怎么获取这些边界的呢，其实很笨的方法，我使用了ps的坐标，拖动的时候就可以看到对应像素，如下图：</p>
-<p><img src="https://img-blog.csdn.net/20180417090642726?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hBTk5JTkc1NjMxMjg3NjY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<p>好了，最简单的切割完成了，在这里在贴一个自动切割多块的代码，切割个数是yy * xx个，可自行修改，知道了原理大家也可以自由发挥哦~效果图和代码如下：</p>
-<p><img src="https://img-blog.csdn.net/2018041709134155?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0hBTk5JTkc1NjMxMjg3NjY=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
-<blockquote>
-<p>from PIL import Image</p>
-<p>im = Image.open(“F:/test.jpg”)</p>
-<p># 图片的宽度和高度</p>
-<p>img_size = im.size</p>
-<p>print(“图片宽度和高度分别是{}”.format(img_size))</p>
-<p>xx = 3</p>
-<p>yy = 2</p>
-<p>x = img_size[0] // xx</p>
-<p>y = img_size[1] // yy</p>
-<p>for j in range(yy):</p>
-<p>​    for i in range(xx):</p>
-<p>​        left = i*x</p>
-<p>​        up = y*j</p>
-<p>​        right = left + x</p>
-<p>​        low = up + y</p>
-<p>​        region = im.crop((left,up,right,low))</p>
-<p>​        print((left,up,right,low))</p>
-<p>​        temp = str(i)+str(j)</p>
-<p>​        region.save(“f:/test/“+temp+”.png”)</p>
-</blockquote>
+          最近在做毕业设计，涉及到图像处理的知识，记录一下
+运行环境python3.6
+先看效果图: 
 
-          
+可见，这里实现的是一个定点切割，怎么实现的呢？来看看代码：
+
+from PIL import Image
+im = Image.open(‘F:/test.jpg’)
+# 图片的宽度和高度
+img_siz
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/16/python图像处理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1048,6 +1155,37 @@
           
 
           
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  78字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
 
           
 
@@ -1066,17 +1204,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/16/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1169,15 +1305,24 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -1238,6 +1383,10 @@
 
 
 
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共1.6k字</span>
+</div>
         
 <div class="busuanzi-count">
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -1300,6 +1449,8 @@
   
 
 
+  
+
 
 
 
@@ -1338,6 +1489,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -1424,6 +1580,9 @@
   
 
   
+  
+  <script type="text/javascript"
+  color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   
   
 </body>
